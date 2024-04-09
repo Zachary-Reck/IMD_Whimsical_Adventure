@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3386191006410477097}
   - component: {fileID: 902560418413724757}
   - component: {fileID: 8653519882925701649}
-  - component: {fileID: -7546873469253512782}
   m_Layer: 0
   m_Name: Portal_Effect
   m_TagString: Untagged
@@ -4778,7 +4777,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f6d8a7b50ac121f49a05d97d37e7e8fc, type: 2}
+  - {fileID: 2100000, guid: 62a74cef8878e494a99b3533e35da989, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4831,20 +4830,3 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &-7546873469253512782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5235807024914131391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 0}
-  isGlobal: 0
-  blendDistance: 0
-  weight: 1
-  priority: 0

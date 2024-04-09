@@ -77,12 +77,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BaseTexScale: 4
+    - _BaseTexScale: 10
     - _BaseTexVis: 0.503
     - _BumpScale: 1
     - _CapTexScale: 0.81
     - _CapTexVis: 1
-    - _Capglow: 0
+    - _Capglow: 0.7
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -93,12 +93,12 @@ Material:
     - _Parallax: 0.02
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Underglow: 0.173
+    - _Underglow: 0.7
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor1: {r: 1, g: 0.08823532, b: 0, a: 1}
+    - _BaseColor1: {r: 1, g: 0.1283899, b: 0, a: 1}
     - _BaseColor2: {r: 1, g: 0.8068966, b: 0, a: 0.178}
-    - _BottomColor: {r: 0.9338235, g: 0.9116618, b: 0.8720264, a: 1}
+    - _BottomColor: {r: 1, g: 0.24049592, b: 0, a: 1}
     - _CapColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.7647059, g: 0.26442847, b: 0.21929064, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

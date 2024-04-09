@@ -80,9 +80,9 @@ Material:
     - _BaseTexScale: 2.37
     - _BaseTexVis: 0.221
     - _BumpScale: 1
-    - _CapTexScale: 0.7
+    - _CapTexScale: 0.5
     - _CapTexVis: 1
-    - _Capglow: 0
+    - _Capglow: 0.7
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -93,10 +93,10 @@ Material:
     - _Parallax: 0.02
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Underglow: 0.088
+    - _Underglow: 0.7
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor1: {r: 0.5209775, g: 0.9705882, b: 0.5426829, a: 1}
+    - _BaseColor1: {r: 0, g: 0.060156107, b: 1, a: 1}
     - _BaseColor2: {r: 0, g: 0.5448277, b: 1, a: 0.559}
     - _BottomColor: {r: 0.5808823, g: 0.6704868, b: 1, a: 1}
     - _CapColor: {r: 0.50735295, g: 0.6534483, b: 1, a: 0.359}
