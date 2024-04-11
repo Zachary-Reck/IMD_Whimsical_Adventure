@@ -67,16 +67,17 @@
     <Compile Include="Assets\SinuousShrooms\Scripts\InputTransform.cs" />
     <Compile Include="Assets\Portal\portalColllision.cs" />
     <Compile Include="Assets\SinuousShrooms\Scripts\SmoothMouseLook.cs" />
+    <Compile Include="Assets\Scripts\Mushroom_Change.cs" />
     <Compile Include="Assets\SinuousShrooms\Scripts\PrefabSwapper.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
     <Compile Include="Assets\SinuousShrooms\Scripts\ConstantTransform.cs" />
     <Compile Include="Assets\SinuousShrooms\Scripts\CameraOrbit.cs" />
+    <Compile Include="Assets\SceneChange.cs" />
+    <Compile Include="Assets\Scenes\Mushroom_Scene\Mushroom_Scene_Change.cs" />
+    <Compile Include="Assets\Portal_Scene\LevelChanger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fantasy Forest Environment Free Sample\Forest\StandardNoCulling.shader" />
-    <None Include="Assets\Mushroom\Surreal-Skyboxes\readme.txt" />
-    <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
-    <None Include="Assets\Fantasy Skybox FREE\ReleaseNotes.txt" />
     <None Include="Assets\SinuousShrooms\Shaders\ShroomShader.shader" />
   </ItemGroup>
   <ItemGroup>

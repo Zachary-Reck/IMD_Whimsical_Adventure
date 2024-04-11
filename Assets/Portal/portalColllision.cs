@@ -7,11 +7,13 @@ using UnityEngine.SceneManagement;
 
 public class portalColllision : MonoBehaviour
 {
+    public Animator animator;
     private void OnTriggerEnter(Collider other){
         if (other.tag == "Player"){
-            Debug.Log(SceneManager.GetActiveScene().name);
-            SceneManager.LoadScene("Mushroom");
+            SceneManager.LoadScene("Portal");
+            animator.SetTrigger("Fade In");
         }
 
     }
+    
 }
