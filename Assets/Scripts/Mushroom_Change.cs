@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Mushroom_Change : MonoBehaviour
 {
-    /*private void OnTriggerEnter(Collider other){
-        Material lit = Mushroom_Material_Unlit;
+    private MeshRenderer m_meshRenderer;
+    private void Start(){
+        m_meshRenderer = GetComponent<MeshRenderer>();
+    }
+    public Material lit;
+    public Material unlit;
+    private void OnTriggerEnter(Collider other){
         if (other.tag == "Player"){
-            GetComponent<MeshRenderer>().material = Mushroom_Material_Unlit;
+            m_meshRenderer.material = unlit;
         }
-    }*/
+    }
 }
