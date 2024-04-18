@@ -10,10 +10,12 @@ public class portalColllision : MonoBehaviour
     public Animator animator;
     private void OnTriggerEnter(Collider other){
         if (other.tag == "Player"){
-            SceneManager.LoadScene("Portal");
-            animator.SetTrigger("Fade In");
+            //SceneManager.LoadScene("Portal");
+            animator.SetTrigger("Fade Out");
         }
-
+    }
+    public void OnFadeComplete(){
+        SceneManager.LoadScene(1);
     }
     
 }

@@ -22,11 +22,16 @@ public class FirstPersonController : MonoBehaviour
 
     public Camera playerCamera;
 
+
+
     public float fov = 60f;
     public bool invertCamera = false;
     public bool cameraCanMove = true;
     public float mouseSensitivity = 2f;
     public float maxLookAngle = 50f;
+
+
+    Rigidbody m_Rigidbody;
 
     // Crosshair
     public bool lockCursor = true;
@@ -151,6 +156,7 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
+        m_Rigidbody = GetComponent<Rigidbody>();
         if(lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -526,6 +532,13 @@ public class FirstPersonController : MonoBehaviour
             joint.localPosition = new Vector3(Mathf.Lerp(joint.localPosition.x, jointOriginalPos.x, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.y, jointOriginalPos.y, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.z, jointOriginalPos.z, Time.deltaTime * bobSpeed));
         }
     }
+
+    private void OnTriggerEnter(Collider other){
+        if (other.tag == "Portal"){
+            cameraCanMove = false;
+            m_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
+        }
+    }
 }
 
 
@@ -735,7 +748,9 @@ public class FirstPersonController : MonoBehaviour
             Undo.RecordObject(fpc, "FPC Change");
             SerFPC.ApplyModifiedProperties();
         }
+        
     }
+
 
 }
 
