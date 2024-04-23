@@ -46,7 +46,7 @@ public class FirstPersonController : MonoBehaviour
 
     #region Camera Zoom Variables
 
-    public bool enableZoom = true;
+    public bool enableZoom = false;
     public bool holdToZoom = false;
     public KeyCode zoomKey = KeyCode.Mouse1;
     public float zoomFOV = 30f;
