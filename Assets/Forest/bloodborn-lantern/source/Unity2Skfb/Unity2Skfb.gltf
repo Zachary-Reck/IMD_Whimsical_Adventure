@@ -1,0 +1,420 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 9,
+      "type": "VEC3",
+      "max": [
+        0.99877911806106567,
+        1.6691628694534302,
+        -0.085845761001110077
+      ],
+      "min": [
+        -0.96759128570556641,
+        -0.18845741450786591,
+        -2.1671774387359619
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 9,
+      "type": "VEC3",
+      "max": [
+        -0.11097945272922516,
+        -0.50028783082962036,
+        0.85422986745834351
+      ],
+      "min": [
+        -0.352968692779541,
+        -0.76827800273895264,
+        0.53400558233261108
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 9,
+      "type": "VEC4",
+      "max": [
+        -0.85034322738647461,
+        0.28344592452049255,
+        0.007229155395179987,
+        -1.0
+      ],
+      "min": [
+        -0.983386218547821,
+        -0.35951784253120422,
+        -0.4241969883441925,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 9,
+      "type": "VEC2",
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5125,
+      "count": 24,
+      "type": "SCALAR",
+      "max": [
+        8.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 11960,
+      "type": "VEC3",
+      "max": [
+        1.8381770849227905,
+        0.68168491125106812,
+        8.6503725051879883
+      ],
+      "min": [
+        -1.78867506980896,
+        -0.68435204029083252,
+        3.8757323750360229E-07
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 11960,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 11960,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        0.999822199344635,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 11960,
+      "type": "VEC2",
+      "max": [
+        0.966925323009491,
+        0.98032516241073608
+      ],
+      "min": [
+        0.019890537485480309,
+        0.012202264741063118
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5125,
+      "count": 54120,
+      "type": "SCALAR",
+      "max": [
+        11959.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "generator": "UnityGLTF (2017.3.1f1)",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "Unity2Skfb.bin",
+      "byteLength": 791088
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 108
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 108,
+      "byteLength": 108
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 216,
+      "byteLength": 144
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 360,
+      "byteLength": 72
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 432,
+      "byteLength": 96
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 528,
+      "byteLength": 143520
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 144048,
+      "byteLength": 143520
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 287568,
+      "byteLength": 191360
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 478928,
+      "byteLength": 95680
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 574608,
+      "byteLength": 216480
+    }
+  ],
+  "images": [
+    {
+      "uri": "11174_spider-web.png",
+      "name": "spider-web"
+    },
+    {
+      "uri": "11166_lantern_Emission.jpg",
+      "name": "lantern_Emission"
+    },
+    {
+      "uri": "98080_lantern_Normal.jpg",
+      "name": "lantern_Normal"
+    },
+    {
+      "uri": "11164_lantern_AlbedoTransparency.jpg",
+      "name": "lantern_AlbedoTransparency"
+    },
+    {
+      "uri": "98084_lantern_MetallicSmoothness.png",
+      "name": "lantern_MetallicSmoothness"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.73399999737739563
+      },
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.11299999803304672,
+      "name": "spider web"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5,
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      },
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 4
+      },
+      "emissiveTexture": {
+        "index": 1
+      },
+      "emissiveFactor": [
+        20.0,
+        20.0,
+        20.0
+      ],
+      "name": "lantern_main"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "spider web"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1
+        }
+      ],
+      "name": "lantern"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "translation": [
+        0.32,
+        0.0,
+        0.0
+      ],
+      "name": "bloodborn_lantern"
+    },
+    {
+      "children": [
+        2,
+        3
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "translation": [
+        1.00199366,
+        -0.692636,
+        0.537294865
+      ],
+      "name": "bloodborn_lantern "
+    },
+    {
+      "mesh": 0,
+      "rotation": [
+        -0.329787552,
+        0.13342303,
+        -0.0471413657,
+        -0.9333896
+      ],
+      "scale": [
+        1.0,
+        0.99999994,
+        1.0
+      ],
+      "translation": [
+        0.0729199648,
+        7.1819067,
+        -1.38230264
+      ],
+      "name": "spider web"
+    },
+    {
+      "mesh": 1,
+      "rotation": [
+        -0.7071068,
+        0.0,
+        0.0,
+        -0.7071068
+      ],
+      "name": "lantern"
+    }
+  ],
+  "samplers": [
+    {
+      "minFilter": 9729
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "Unity2Skfb"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "spider-web"
+    },
+    {
+      "sampler": 0,
+      "source": 1,
+      "name": "lantern_Emission"
+    },
+    {
+      "sampler": 0,
+      "source": 2,
+      "name": "lantern_Normal"
+    },
+    {
+      "sampler": 0,
+      "source": 3,
+      "name": "lantern_AlbedoTransparency"
+    },
+    {
+      "sampler": 0,
+      "source": 4,
+      "name": "lantern_MetallicSmoothness"
+    }
+  ]
+}
