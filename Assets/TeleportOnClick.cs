@@ -10,8 +10,12 @@ public class TeleportOnClick : MonoBehaviour
     private int hitCounter = 0;
     private GameObject anotherObject;
 
-     public AudioClip myAudioClip; 
-     public AudioSource myAudioSource; 
+    public AudioClip myAudioClip; 
+    public AudioSource myAudioSource; 
+    public ParticleSystem teleportParticles;  // Reference to the particle system
+
+    public ParticleSystem fireworks;  // Reference to the particle system
+
 
     void Start()
     {
@@ -35,7 +39,6 @@ public class TeleportOnClick : MonoBehaviour
             if (distance <= interactionDistance)
             {
                 Debug.Log("Player is close enough to teleport the mushroom.");
-            
                 Invoke("TeleportMushroom", delay);
             }
         }
@@ -43,6 +46,13 @@ public class TeleportOnClick : MonoBehaviour
 
     void TeleportMushroom()
     {
+        // Trigger the particle effect at the current position before teleporting
+        if (teleportParticles != null)
+        {
+            teleportParticles.transform.position = transform.position; // Set particle system to the current position
+            teleportParticles.Play(); // Play the particle system
+        }
+
         Vector3 randomDirection = Random.insideUnitSphere * teleportRadius;
         randomDirection += player.position;
         randomDirection.y = transform.position.y;
@@ -56,9 +66,13 @@ public class TeleportOnClick : MonoBehaviour
 
         if (hitCounter >= 5)
         {
-
             gameObject.SetActive(false);
             PlayTheMusic();
+             if (fireworks != null)
+        {
+            fireworks.transform.position = transform.position; // Set particle system to the current position
+           fireworks.Play(); // Play the particle system
+        }
             if (anotherObject != null)
             {
                 anotherObject.SetActive(true);
@@ -67,9 +81,9 @@ public class TeleportOnClick : MonoBehaviour
         }
     }
 
-     public void PlayTheMusic()
+    public void PlayTheMusic()
     {
-          myAudioSource.clip = myAudioClip;  // Set the AudioClip to the AudioSource
-            myAudioSource.Play();    
+        myAudioSource.clip = myAudioClip;  // Set the AudioClip to the AudioSource
+        myAudioSource.Play();    
     }
 }
