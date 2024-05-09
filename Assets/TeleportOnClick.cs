@@ -10,6 +10,9 @@ public class TeleportOnClick : MonoBehaviour
     private int hitCounter = 0;
     private GameObject anotherObject;
 
+     public AudioClip myAudioClip; 
+     public AudioSource myAudioSource; 
+
     void Start()
     {
         anotherObject = GameObject.FindWithTag(anotherObjectTag);
@@ -32,7 +35,7 @@ public class TeleportOnClick : MonoBehaviour
             if (distance <= interactionDistance)
             {
                 Debug.Log("Player is close enough to teleport the mushroom.");
-                hitCounter++;
+            
                 Invoke("TeleportMushroom", delay);
             }
         }
@@ -49,15 +52,24 @@ public class TeleportOnClick : MonoBehaviour
         directionToPlayer.y = 0;
         Quaternion rotationToPlayer = Quaternion.LookRotation(directionToPlayer);
         transform.rotation = rotationToPlayer;
+        hitCounter++;
 
         if (hitCounter >= 5)
         {
+
             gameObject.SetActive(false);
+            PlayTheMusic();
             if (anotherObject != null)
             {
                 anotherObject.SetActive(true);
                 Debug.Log("Another object set to active after 5 hits.");
             }
         }
+    }
+
+     public void PlayTheMusic()
+    {
+          myAudioSource.clip = myAudioClip;  // Set the AudioClip to the AudioSource
+            myAudioSource.Play();    
     }
 }
