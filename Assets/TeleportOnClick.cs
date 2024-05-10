@@ -15,7 +15,7 @@ public class TeleportOnClick : MonoBehaviour
     public ParticleSystem teleportParticles;  // Reference to the particle system
 
     public ParticleSystem fireworks;  // Reference to the particle system
-
+     public GameObject chest;
 
     void Start()
     {
@@ -29,6 +29,8 @@ public class TeleportOnClick : MonoBehaviour
         {
             Debug.Log("Failed to find object with tag: " + anotherObjectTag);
         }
+
+        
     }
 
     void Update()
@@ -68,11 +70,13 @@ public class TeleportOnClick : MonoBehaviour
         {
             gameObject.SetActive(false);
             PlayTheMusic();
-             if (fireworks != null)
-        {
+            DisableParticleSystem();
+            ActivateObject();
+            if (fireworks != null)
+            {
             fireworks.transform.position = transform.position; // Set particle system to the current position
-           fireworks.Play(); // Play the particle system
-        }
+            fireworks.Play(); // Play the particle system
+            }
             if (anotherObject != null)
             {
                 anotherObject.SetActive(true);
@@ -86,4 +90,28 @@ public class TeleportOnClick : MonoBehaviour
         myAudioSource.clip = myAudioClip;  // Set the AudioClip to the AudioSource
         myAudioSource.Play();    
     }
+
+     public void ActivateObject()
+    {
+        if (chest != null)
+            chest.SetActive(true);
+            
+    }
+
+    public void StopAndClearParticles()
+{
+    if (teleportParticles != null)
+    {
+        teleportParticles.Stop();  // Stop emitting new particles
+        teleportParticles.Clear(); // Remove all particles instantly
+    }
+}
+
+public void DisableParticleSystem()
+{
+    if (teleportParticles != null)
+    {
+        teleportParticles.gameObject.SetActive(false); // Disable the GameObject
+    }
+}
 }

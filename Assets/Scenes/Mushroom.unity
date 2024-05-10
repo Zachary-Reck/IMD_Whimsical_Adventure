@@ -4870,9 +4870,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93d20819ab69747ebbca5a4afd7035a9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 389945450}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93d20819ab69747ebbca5a4afd7035a9, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 389945452}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93d20819ab69747ebbca5a4afd7035a9, type: 3}
       insertIndex: -1
@@ -17908,20 +17905,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 93d20819ab69747ebbca5a4afd7035a9, type: 3}
   m_PrefabInstance: {fileID: 180877096}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &389945450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 389945449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 686c6fb1bd15d484db26f2204cc4f3a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teleportRadius: 10
-  player: {fileID: 1118412936}
 --- !u!65 &389945452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18026,6 +18009,7 @@ MonoBehaviour:
   myAudioSource: {fileID: 1367540755}
   teleportParticles: {fileID: 1919865906}
   fireworks: {fileID: 1595371363}
+  chest: {fileID: 2252836501646664396}
 --- !u!114 &412425951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33699,7 +33683,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -59226,7 +59210,7 @@ Transform:
   m_GameObject: {fileID: 1504800272}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -726, y: -242, z: 31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59323,7 +59307,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -64523,7 +64507,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -70113,7 +70097,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -74876,7 +74860,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -99631,7 +99615,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
