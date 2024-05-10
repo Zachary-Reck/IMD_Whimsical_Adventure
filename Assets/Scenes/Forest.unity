@@ -2373,6 +2373,7 @@ GameObject:
   - component: {fileID: 1003460590}
   - component: {fileID: 1003460589}
   - component: {fileID: 1003460588}
+  - component: {fileID: 1003460595}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -2408,7 +2409,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003460587}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d493d7ad2f21426391207505257a716, type: 3}
   m_Name: 
@@ -2535,6 +2536,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -28.903, y: -24.75, z: 182.512}
+--- !u!114 &1003460595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003460587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd32ce2409499439f9399ae01762ec2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sword: {fileID: 2819678686383349151}
 --- !u!1 &1030655000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4102,7 +4116,7 @@ VideoPlayer:
   m_AspectRatio: 2
   m_DataSource: 0
   m_TimeUpdateMode: 2
-  m_PlaybackSpeed: 1
+  m_PlaybackSpeed: 0.7
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
@@ -18689,7 +18703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2829373202183178073
 GameObject:
   m_ObjectHideFlags: 0
